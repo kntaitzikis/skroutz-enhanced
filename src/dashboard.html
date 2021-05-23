@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/dashboard.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Skroutz Enhanced - Dashboard</h1>
+        <div id="dashboard-nav">
+            <span class="logo">
+                <img src="assets/icons/beasts-32.png" title="skroutz enhanced">
+            </span>
+            <span class="tabButton selected" id="dashboard-button-lists">Shopping lists</span>
+            <span class="tabButton" id="dashboard-button-products">Tracked products</span>
+            <span class="tabButton" id="dashboard-button-preferences">Preferences</span>
+        </div>
+        <div id="unsaved-warning" style="display:none;">
+            <span>Warning! You have unsaved changes</span>
+            <button id="button-stay-tab">Stay</button>
+            <button id="button-ignore-changes">Ignore</button>
+        </div>
+        <iframe id="dashboard-iframe" src="shopping-lists.html"></iframe>
+        <script src="scripts/dashboard.js"></script>
+    </body>
+</html>

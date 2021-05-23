@@ -1,0 +1,28 @@
+@import "normalize.css";
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+h1 {
+    margin-left: 46px;
+}
+.tabButton {
+    border: 0;
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: #f68b24;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    
+}
+div {
+    padding: 12px;
+}
+iframe {
+    margin-left: 66px;
+    width: 400px;
+    height: 400px;
+}

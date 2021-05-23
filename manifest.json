@@ -1,0 +1,44 @@
+{
+
+    "manifest_version": 2,
+    "name": "skroutz enhanced",
+    "version": "0.1",
+  
+    "description": "additional features and improvements for skroutz.gr",
+    "homepage_url": "https://github.com/",
+    "icons": {
+        "48": "src/assets/icons/beasts-48.png"
+      },
+
+    "web_accessible_resources": [
+      "src/assets/icons/beasts-32.png"
+    ],
+      
+    "permissions": [
+      "activeTab"
+    ],
+  
+    "browser_action": {
+      "default_icon": "src/assets/icons/beasts-32.png",
+      "default_title": "skroutz enhanced",
+      "default_popup": "src/popup.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://*.skroutz.gr/s/*"],
+        "js": ["src/scripts/constants.js", "src/scripts/modify_product_page.js"]
+      }
+    ],
+
+    "background": {
+        "page": "src/background.html"
+      },
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "skroutz-enhanced@example.com"
+        }
+      }
+  
+  }
